@@ -1,0 +1,395 @@
+/*
+Arthor: Lin Qi
+Last Update: 5Dec2014
+*/
+
+/* Remove some default style */
+/*================================*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: DarkTurquoise;
+}
+
+/* Universal */
+/*================================*/
+
+
+body {
+    font-family: 'Lora', serif;
+    color: DarkSlateGray;
+}
+
+header {
+    padding: 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+header div {
+    padding-top: 0;
+}
+p {
+    font-size: 1.1em;
+}
+ul {
+    font-size: 1.1em;
+}
+ul.square {
+    list-style-type: square;
+    padding-left: 1em;
+}
+a:hover {
+    color: red;
+}
+a.button-success:hover {
+    color: white;
+}
+a.button-error:hover {
+    color: white;
+}
+
+footer{
+    margin-top: 1em;
+    bottom: 0;
+    color: grey;
+}
+
+.strongtext{
+    color: deeppink;
+    font-size: 1.1em;
+}
+
+/* Share Buttons */
+/*================================*/
+ul.share-buttons{
+    padding-top: 10px;
+    padding-bottom: 1em;
+}
+
+ul.share-buttons li{
+	display: inline;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.share-buttons li a {
+    color: black;
+}
+
+ul.share-buttons li a:hover {
+    color: red;
+}
+
+/* Dark Mode*/
+/*================================*/
+.dark { 
+    background: Dimgrey;
+    color:Wheat; 
+}
+
+.dark footer div div p small {
+    color: Wheat;
+}
+
+.dark footer div div p small span.strongtext {
+    color: Purple;
+}
+.dark a:hover {
+    color: LightCoral;
+}
+
+.dark ul.share-buttons li a:hover {
+    color: LightCoral;
+}
+
+.dark div#nav div.grid div.unit div.pure-menu.pure-menu-open.pure-menu-horizontal{
+    background: DimGrey;
+}
+
+.dark div#nav div.grid div.unit div.pure-menu a{
+    color: DarkSlateGray;
+}
+
+.dark div#nav div.grid div.unit div.pure-menu li.pure-menu-selected a{
+    color: Black;
+}
+
+.darklight {
+    position: fixed;
+    top: 0;
+    right:0;
+}
+
+/* Tags & Classes & IDs in index.html*/
+/* ================================*/
+#entrance {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2#welcome {
+    color: #fff !important;
+    margin-top: 1em;
+    padding: 0;
+    font-size: 2em;
+}
+
+.block {
+    text-align: center;
+    height: 600px;
+}
+
+.block:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: DarkTurquoise;
+}
+
+form {
+    margin: 2em 0;
+}
+
+#input {
+    align-content: center;
+}
+
+input {
+    margin-top: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+#entrance a:link,
+#entrance a:visited {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+#msg {
+    font: 12px;
+    color:red;
+}
+
+
+/* Tags & Classes & IDs in contact.html*/
+/*================================*/
+
+
+#subheading{
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+.main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#photo img {
+    width:85%;
+    height:85%;
+}
+.main-right {
+    display: inline;
+    max-width: 80%;
+}
+#photo {
+    padding-bottom: 0;
+}
+.main-right div {
+    padding-bottom: 2em;
+}
+.main-right div:last-child {
+    padding-bottom: 0;
+}
+
+.main-right ul li {
+    margin-top: 0.5em;
+}
+
+footer .grid .unit {
+    padding: 0;
+    margin: 0;
+}
+
+footer div div p {
+    margin: 0;
+}
+
+footer .grid .unit:first-child {
+    padding-left: 0;
+}
+footer .grid .unit:last-child {
+    padding-left: 0;
+}
+
+#intro {
+    padding-right: 3em;
+}
+
+#emailme {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* classes & IDs in skills.html & projects.html */
+/*================================*/
+#description {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.app {
+    margin-top: 2em;
+}
+.app a {
+    text-decoration: underline;
+}
+/* classes & IDs in more.html */
+
+#chat {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* I customize the code based on:  */
+/* Source: http://www.dynamicdrive.com/style/csslibrary/item/css3_hover_image_gallery */
+/*================================*/
+.bigger img {
+    margin-left: 2em;
+    margin-top: 2em;
+    height: 80%;
+    min-height: 60%;
+    width: 80%;
+    min-width: 60%;
+    /*Opera scale version*/
+    -webkit-transition-duration: 0.2s;
+    /*Webkit: Animation duration*/
+    -moz-transition-duration: 0.2s;
+    /*Mozilla duration version*/
+    -o-transition-duration: 0.2s;
+    /*Opera duration version*/
+    opacity: 0.9;
+    /*initial opacity of images*/
+}
+.bigger img:hover {
+    -webkit-transform: scale(1.1);
+    /*Webkit: Scale up image to 1.2x original size*/
+    -moz-transform: scale(1.1);
+    /*Mozilla scale version*/
+    -o-transform: scale(1.1);
+    /*Opera scale version*/
+    box-shadow: 0px 0px 30px DarkSlateGray;
+    /*CSS3 shadow: 30px blurred shadow all around image*/
+    -webkit-box-shadow: 0px 0px 30px DarkSlateGray;
+    /*Safari shadow version*/
+    -moz-box-shadow: 0px 0px 30px DarkSlateGray;
+    /*Mozilla shadow version*/
+    opacity: 1;
+}
+/* Source: http://www.dynamicdrive.com/style/csslibrary/item/css3_hover_image_gallery */
+
+
+
+/* Pure Button Customization */
+/*================================*/
+.button-success {
+    color: DarkSlateGray;
+    background: DarkTurquoise;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-error,
+.button-normal{
+    color: DarkSlateGray;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-error {
+    background: rgb(255, 59, 119);
+    /* this is a deeppink */
+}
+.button-normal {
+    background: rgb(82, 101, 107);
+    /* this is an dark grey */
+}
+/* End Pure Button Customization */
+
+
+/* Responsive Stuff */
+/*================================*/
+@media screen and (max-width: 568px) {
+    .main-right {
+        margin-top: 10px;
+        max-width: 100%;
+        display: inline;
+    }
+    #intro {
+        padding-right: 0;
+    }
+
+    #description {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bigger img {
+        margin-left: 0;
+        margin-top: 0;
+        height: 80%;
+        width: 80%;
+        /*Opera scale version*/
+        -webkit-transition-duration: 0.2s;
+        /*Webkit: Animation duration*/
+        -moz-transition-duration: 0.2s;
+        /*Mozilla duration version*/
+        -o-transition-duration: 0.2s;
+        /*Opera duration version*/
+        opacity: 0.9;
+        /*initial opacity of images*/
+    }
+    .button-success {
+        color: white;
+    }
+    .button-error,
+    .button-normal,
+    .button-secondary {
+        color: white;
+    }
+    
+    footer {
+        padding-bottom: 1em;
+    }
+    
+    #chat {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 1180px) {
+
+}
